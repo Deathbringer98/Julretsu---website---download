@@ -1,0 +1,19 @@
+# https://julretsu.site/robots.txt
+# Allows search crawlers and points Google Search Console to the XML sitemap.
+
+User-agent: *
+Allow: /
+
+# Keep crawlers off typical junk paths if they appear later
+Disallow: /404.html
+Disallow: /*?*
+
+# Google Search Console / Googlebot
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Absolute sitemap URL required (Google ignores relative paths)
+Sitemap: https://julretsu.site/sitemap.xml
